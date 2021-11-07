@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #424242;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.secondary-header {
+  background-color: #cdcdcd;
+}
+
+.secondary-header .secondary-header__inside {
+  width: 100%;
+  height: auto;
+}
+
+.secondary-header .secondary-header__inside .site-meta-wrapper {
+  width: 100%;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.secondary-header .secondary-header__inside .site-meta-wrapper .site-meta {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 16px;
+}
+
+.secondary-header .secondary-header__inside .site-meta-wrapper .site-meta .appicon {
+  padding: 0 10px;
+}
+
+main .swiper-container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main .swiper-container .swiper-slide {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .swiper-container .swiper-slide .hero-link .link-image {
+  width: 100%;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
+main .frequent-searches a {
+  text-decoration: none;
+  color: red;
+}
+
+main .frequent-searches a:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+main .wrapper {
+  background-color: #F4F4F4;
+}
+
+main .wrapper .govt-issued .emblem {
+  height: 100px;
+}

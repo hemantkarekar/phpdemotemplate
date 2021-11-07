@@ -1,0 +1,225 @@
+header {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80px;
+    z-index: 999;
+    width: 100%;
+    background-color: black;
+  }
+  
+  header .wrap {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  header .wrap .logo {
+    height: 100%;
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .wrap .logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 80px;
+  }
+  
+  header .wrap nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+  }
+  
+  header .wrap nav .cancel-btn {
+    display: none;
+  }
+  
+  header .wrap nav .nav-links-md {
+    display: none;
+  }
+  
+  header .wrap nav .nav-links {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .wrap nav .nav-links ul {
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  header .wrap nav .nav-links ul li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  header .wrap nav .nav-links a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  
+  header .wrap nav .nav-links-md ul li.active a, header .wrap nav .nav-links ul li.active a {
+    color: gray;
+  }
+  
+  header .wrap .right {
+    height: 100%;
+    width: 150px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  header .wrap .right a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  
+  header .wrap .right .hamburger {
+    height: 20px;
+    width: 30px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  
+  header .wrap .right .hamburger .line {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+  }
+  
+  header .wrap .right .hamburger .line:nth-child(1) {
+    width: 70%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 80px;
+      width: 100%;
+      z-index: 999;
+    }
+    header .wrap {
+      width: 90%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+    header .wrap .logo {
+      height: 100%;
+      width: 80px;
+    }
+    header .wrap nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      height: 100vh;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: 1;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    header .wrap nav.active {
+      background-color: black;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    header .wrap nav .cancel-btn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    header .wrap nav .cancel-btn .btn {
+      padding: 20px;
+    }
+    header .wrap nav .cancel-btn .btn svg {
+      height: 40px;
+      z-index: 1;
+    }
+    header .wrap nav .nav-links {
+      display: none;
+    }
+    header .wrap nav .nav-links-md {
+      display: block;
+      position: absolute;
+      height: 80%;
+    }
+    header .wrap nav .nav-links-md ul {
+      list-style: none;
+    }
+    header .wrap nav .nav-links-md ul li {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    header .wrap nav .nav-links-md a {
+      color: white;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    header .wrap .right {
+      height: 100%;
+    }
+    header .wrap .right .hamburger {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
